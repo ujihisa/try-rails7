@@ -1,0 +1,15 @@
+current directory: /home/ujihisa/git/try-rails7/vendor/bundle/ruby/3.0.0/gems/bindex-0.8.1/ext/skiptrace
+/home/ujihisa/.rbenv/versions/3.0.2/bin/ruby -I /home/ujihisa/.rbenv/versions/3.0.2/lib/ruby/3.0.0 -r ./siteconf20210923-133002-ggsdq5.rb extconf.rb
+creating Makefile
+
+current directory: /home/ujihisa/git/try-rails7/vendor/bundle/ruby/3.0.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= clean
+
+current directory: /home/ujihisa/git/try-rails7/vendor/bundle/ruby/3.0.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\=
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.so
+
+current directory: /home/ujihisa/git/try-rails7/vendor/bundle/ruby/3.0.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 cruby.so ./.gem.20210923-133002-grxguo/skiptrace/internal
