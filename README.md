@@ -1,24 +1,19 @@
-# README
+## Development
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+```
+docker-compose up -d yaichi && docker-compose up --build try-rails7
+```
 
-Things you may want to cover:
+or run background like this:
 
-* Ruby version
+```
+docker-compose build try-rails7
+docker-compose up -d yaichi try-rails7
+docker-compose logs try-rails7
+```
 
-* System dependencies
 
-* Configuration
+## Licence
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Copyright @ Tatsuhiro Ujihisa
+GPLv3 or any later versions
