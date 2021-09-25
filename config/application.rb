@@ -18,7 +18,7 @@ unless ENV['SKIP_GOOGLE_CLOUD_STORAGE'] == '1' # skip during assets:precompile
   file.download("db/#{Rails.env}.sqlite3")
 end
 
-## ok
+## ok. See the bottom too.
 
 require_relative "boot"
 
@@ -42,3 +42,9 @@ module TryRails7
     # config.eager_load_paths << Rails.root.join("extras")
   end
 end
+
+## Use ./db/production.sqlite3
+TmpRailsSqlite3::Application.class_eval do
+  config.google_cloud_storage_bucket = bucket
+end
+STDOUT.sync = true
