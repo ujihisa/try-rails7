@@ -1,3 +1,6 @@
+require_relative "boot"
+require "rails/all"
+
 ## download ./db/production.sqlite3
 unless ENV['SKIP_GOOGLE_CLOUD_STORAGE'] == '1' # skip during assets:precompile
   require 'google/cloud/storage'
@@ -19,10 +22,6 @@ unless ENV['SKIP_GOOGLE_CLOUD_STORAGE'] == '1' # skip during assets:precompile
 end
 
 ## ok. See the bottom too.
-
-require_relative "boot"
-
-require "rails/all"
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
