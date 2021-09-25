@@ -44,7 +44,7 @@ module TryRails7
 end
 
 ## Use ./db/production.sqlite3
-TmpRailsSqlite3::Application.class_eval do
+TryRails7::Application.class_eval do
   config.google_cloud_storage_bucket = bucket
 end
 STDOUT.sync = true
