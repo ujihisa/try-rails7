@@ -59,7 +59,6 @@ group :development do
 end
 
 group :test do
-  next # Temporary
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara", ">= 3.26"
   gem "selenium-webdriver"
