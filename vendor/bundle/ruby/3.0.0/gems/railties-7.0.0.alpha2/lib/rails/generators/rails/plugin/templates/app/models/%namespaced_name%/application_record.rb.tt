@@ -1,6 +1,0 @@
-<%= wrap_in_modules <<~rb
-  class ApplicationRecord < ActiveRecord::Base
-    primary_abstract_class
-  end
-rb
-%>
